@@ -1,0 +1,40 @@
+name: alfred
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: ^5.2.5
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.jpeg
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.jpeg" # Update with your logo file
+
+flutter_native_splash:
+  android: true
+  ios: true
+  fullscreen: true
+  image: assets/logo.jpeg  # Ensure the file exists and is correctly referenced
+  color: "#ffffff"  # Background color
+  android_12:
+    image: assets/logo.jpeg
+    icon_background_color: "#ffffff"
